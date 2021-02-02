@@ -1,0 +1,27 @@
+[user]
+name = Bruno Mateus
+email= Bruno_205@hotmail.com
+[core]
+editor = code
+excludefile=~/gitignore_global
+[push]
+default= current
+rebase = true
+[branch]
+autosetuprebase= always
+[commit]
+template = ~/.gitmessage
+[color]
+ui=true
+[color "status"]
+added = green
+changed = yellow
+untacked = red
+[color "branch"]
+current = white
+remote = red
+[color "diff"]
+meta= yellow
+old = red
+new = green
+
