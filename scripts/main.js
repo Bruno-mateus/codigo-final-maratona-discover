@@ -17,7 +17,6 @@ const Storage = {
     );
   },
 };
-};
 const Transaction = {
     all: Storage.get(), //atalho para a const transactions q vai estar no local storage
     add(transaction) {
