@@ -7,13 +7,16 @@ const Modal = {
     }
 };
 const Storage = {
-    get() {
-        return JSON.parse(localStorage.getItem("devFinances:transactions")) || []
-    },
-    set(transactions) {
-       return JSON.parse(localStorage.setItem("devFincances:transactions", JSON.stringify(transactions)));
-
-    }
+  get() {
+    return JSON.parse(localStorage.getItem('dev.finance:transactions')) || [];
+  },
+  set(transactions) {
+    localStorage.setItem(
+      'dev.finance:transactions',
+      JSON.stringify(transactions),
+    );
+  },
+};
 };
 const Transaction = {
     all: Storage.get(), //atalho para a const transactions q vai estar no local storage
